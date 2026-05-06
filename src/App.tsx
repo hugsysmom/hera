@@ -35,7 +35,7 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
+            <Route path="/about" element={<Home />} />
             <Route path="/services" element={<PageWrapper><Services /></PageWrapper>} />
             <Route path="/team" element={<PageWrapper><Team /></PageWrapper>} />
             <Route path="/education/guide" element={<EducationGuide />} />

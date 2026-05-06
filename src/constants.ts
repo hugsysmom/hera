@@ -1,5 +1,5 @@
 export const NAV_ITEMS = [
-  { id: 'about', label: '希拉雅', path: '/about' },
+  { id: 'about', label: '希拉雅', path: '/' },
   { id: 'services', label: '療程服務', path: '/services', mega: true },
   { id: 'team', label: '醫療團隊', path: '/team' },
   { 

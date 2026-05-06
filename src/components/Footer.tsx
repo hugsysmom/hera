@@ -48,7 +48,7 @@ export function Footer() {
             <div className="w-full max-w-[200px]">
               <h4 className="text-brand-gold text-xs font-bold tracking-[0.3em] uppercase mb-8">網站導覽</h4>
               <ul className="space-y-4 text-sm text-white/70">
-                <li><Link to="/about" className="hover:text-brand-gold transition-colors">關於希拉雅</Link></li>
+                <li><Link to="/" className="hover:text-brand-gold transition-colors">關於希拉雅</Link></li>
                 <li><Link to="/services" className="hover:text-brand-gold transition-colors">療程服務項目</Link></li>
                 <li><Link to="/team" className="hover:text-brand-gold transition-colors">醫師團隊介紹</Link></li>
                 <li><Link to="/news" className="hover:text-brand-gold transition-colors">最新消息與活動</Link></li>
