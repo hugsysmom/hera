@@ -102,9 +102,9 @@ export function Header() {
                                   <h4 className="text-brand-blue/60 text-[10px] font-bold mb-2 uppercase tracking-widest">{sub.name}</h4>
                                   <ul className="space-y-2">
                                     {sub.items.map(item => (
-                                      <li key={item}>
-                                        <Link to="/services" className="text-sm text-brand-blue/80 hover:text-brand-gold transition-colors block">
-                                          {item}
+                                      <li key={item.id}>
+                                        <Link to={`/services/${item.id}`} className="text-sm text-brand-blue/80 hover:text-brand-gold transition-colors block">
+                                          {item.name}
                                         </Link>
                                       </li>
                                     ))}
@@ -114,9 +114,9 @@ export function Header() {
                             ) : (
                               <ul className="space-y-2">
                                 {group.items?.map(item => (
-                                  <li key={item}>
-                                    <Link to="/services" className="text-sm text-brand-blue/80 hover:text-brand-gold transition-colors block">
-                                      {item}
+                                  <li key={item.id}>
+                                    <Link to={`/services/${item.id}`} className="text-sm text-brand-blue/80 hover:text-brand-gold transition-colors block">
+                                      {item.name}
                                     </Link>
                                   </li>
                                 ))}

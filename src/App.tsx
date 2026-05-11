@@ -20,6 +20,7 @@ import NewsPage from './pages/NewsPage';
 import EducationGuide from './pages/EducationGuide';
 import EducationFAQ from './pages/EducationFAQ';
 import EducationInsights from './pages/EducationInsights';
+import TreatmentDetail from './pages/TreatmentDetail';
 
 // Page Wrappers for layout consistency
 const PageWrapper = ({ children }: { children: React.ReactNode }) => (
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<Home />} />
             <Route path="/services" element={<PageWrapper><Services /></PageWrapper>} />
+            <Route path="/services/:id" element={<TreatmentDetail />} />
             <Route path="/team" element={<PageWrapper><Team /></PageWrapper>} />
             <Route path="/education/guide" element={<EducationGuide />} />
             <Route path="/education/faq" element={<EducationFAQ />} />

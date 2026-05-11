@@ -39,11 +39,18 @@ export function Services() {
                   {item.subcategories ? (
                     item.subcategories.map(s => s.name).join('｜')
                   ) : (
-                    item.items?.join('｜')
+                    item.items?.map(i => i.name).join('｜')
                   )}
                 </div>
                 
-                <div className="mt-8 text-white uppercase tracking-[0.3em] text-[10px] font-bold border border-white/30 px-6 py-2 hover:bg-white hover:text-brand-blue transition-all">
+                <div 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    const firstId = item.subcategories?.[0]?.items?.[0]?.id || item.items?.[0]?.id;
+                    if (firstId) window.location.href = `/services/${firstId}`;
+                  }}
+                  className="mt-8 text-white uppercase tracking-[0.3em] text-[10px] font-bold border border-white/30 px-6 py-2 hover:bg-white hover:text-brand-blue transition-all"
+                >
                   View More
                 </div>
               </div>

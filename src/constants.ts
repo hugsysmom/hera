@@ -22,29 +22,49 @@ export const TREATMENTS = [
     subcategories: [
       {
         name: '眼部',
-        items: ['雙眼皮', '開眼頭', '開眼尾', '眼瞼下置', '眼袋內/外開', '眉切']
+        items: [
+          { name: '雙眼皮', id: 'double-eyelid' },
+          { name: '開眼頭', id: 'inner-canthoplasty' },
+          { name: '開眼尾', id: 'lateral-canthoplasty' },
+          { name: '眼瞼下置', id: 'lower-eyelid-retraction' },
+          { name: '眼袋內/外開', id: 'blepharoplasty' },
+          { name: '眉切', id: 'eyebrow-lift' }
+        ]
       },
       {
         name: '臉部',
-        items: ['前額拉提', '中下臉拉提']
+        items: [
+          { name: '前額拉提', id: 'forehead-lift' },
+          { name: '中下臉拉提', id: 'mid-lower-face-lift' }
+        ]
       },
       {
         name: '其他',
-        items: ['髮際線前移']
+        items: [
+          { name: '髮際線前移', id: 'hairline-lowering' }
+        ]
       }
     ]
   },
   {
     category: '雷射光療',
-    items: ['皮秒', '脈衝光']
+    items: [
+      { name: '皮秒', id: 'picosecond' },
+      { name: '脈衝光', id: 'ipl' }
+    ]
   },
   {
     category: '微整形',
-    items: ['埋線', '玻尿酸']
+    items: [
+      { name: '埋線', id: 'thread-lift' },
+      { name: '玻尿酸', id: 'filler' }
+    ]
   },
   {
     category: '健康醫學',
-    items: ['美白針']
+    items: [
+      { name: '美白針', id: 'whitening-drip' }
+    ]
   }
 ];
 
